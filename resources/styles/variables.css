@@ -2,6 +2,7 @@
   --main_font: "Montserrat";
   --title_font: "Playfair";
   --author_font: "Pacifico";
+
   --main_size: 1rem;
   --author-name_size: 1.4rem;
   --title_size: 1.2rem;
@@ -10,12 +11,14 @@
 
 [data-theme="dark"] {
   --bg_color: #28313b;
-  --bg-cv_color: coral;
+  --bg-cv_color: rgba(0, 0, 0, 0.49);
   --main-text_color: #fff;
   --link_color: #fff;
+  --burger_color: #fff;
   --switcher_color: #fff;
   --skills-round_color: #fff;
   --active-link_color: coral;
+  --active-burger_color: coral;
 }
 
 [data-theme="light"] {
