@@ -1,0 +1,29 @@
+:root {
+  --main_font: "Montserrat";
+  --title_font: "Playfair";
+  --author_font: "Pacifico";
+  --main_size: 1rem;
+  --author-name_size: 1.4rem;
+  --title_size: 1.2rem;
+  --author-text_size: 1.1rem;
+}
+
+[data-theme="dark"] {
+  --bg_color: #28313b;
+  --bg-cv_color: coral;
+  --main-text_color: #fff;
+  --link_color: #fff;
+  --switcher_color: #fff;
+  --skills-round_color: #fff;
+  --active-link_color: coral;
+}
+
+[data-theme="light"] {
+  --bg_color: #f0e2ec;
+  --bg-cv_color: rgba(210, 238, 0, 0.766);
+  --main-text_color: rgba(12, 20, 93, 0.9);
+  --link_color: rgba(12, 20, 93, 0.9);
+  --switcher_color: rgba(12, 20, 93, 0.9);
+  --skills-round_color: rgba(12, 20, 93, 0.9);
+  --active-link_color: coral;
+}
