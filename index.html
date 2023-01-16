@@ -10,56 +10,44 @@
   </head>
   <body data-theme="dark">
     <div class="cv cv__container">
+      <header class="header cv__row cv-back__header">
+        <nav class="cv-navigation header__navigation">
+          <ul class="cv-navigation-menu header__navigation-menu">
+            <li class="cv-navigation-menu-item header__navigation-menu__item">
+              <a class="cv__link cv__link_active" href="#about">about me</a>
+            </li>
+            <li class="cv-navigation-menu-item header__navigation-menu__item">
+              <a class="cv__link" href="#languages">languages</a>
+            </li>
+            <li class="cv-navigation-menu-item header__navigation-menu__item">
+              <a class="cv__link" href="#skills">skills</a>
+            </li>
+            <li
+              class="cv-navigation-menu-item header__navigation-menu__item cv-navigation-menu-item_middle"
+            >
+              <a class="cv__link" href="#projects">projects</a>
+            </li>
+            <li class="cv-avigation-menu-item header__navigation-menu__item">
+              <a class="cv__link" href="#education">education</a>
+            </li>
+            <li class="cv-navigation-menu-item header__navigation-menu__item">
+              <a class="cv__link" href="#contacts">contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="burger header__burger burger_close">
+          <div class="first-line burger__item"></div>
+          <div class="second-line burger__item"></div>
+          <div class="third-line burger__item"></div>
+        </div>
+      </header>
       <div class="cv-card">
         <div class="cv-front cv-card__item"></div>
         <div class="cv-back cv-card__item">
-          <header class="header cv-back__row cv-back__header">
-            <nav class="cv-back-navigation header__navigation">
-              <ul class="cv-back-navigation-menu header__navigation-menu">
-                <li
-                  class="cv-back-navigation-menu-item header__navigation-menu__item"
-                >
-                  <a class="cv-back__link cv-back__link_active" href="#"
-                    >about me</a
-                  >
-                </li>
-                <li
-                  class="cv-back-navigation-menu-item header__navigation-menu__item"
-                >
-                  <a class="cv-back__link" href="#">skills</a>
-                </li>
-                <li
-                  class="cv-back-navigation-menu-item header__navigation-menu__item"
-                >
-                  <a class="cv-back__link" href="#">education</a>
-                </li>
-                <li
-                  class="cv-back-navigation-menu-item header__navigation-menu__item cv-back-navigation-menu-item_middle"
-                >
-                  <a class="cv-back__link" href="#">projects</a>
-                </li>
-                <li
-                  class="cv-back-navigation-menu-item header__navigation-menu__item"
-                >
-                  <a class="cv-back__link" href="#">languages</a>
-                </li>
-                <li
-                  class="cv-back-navigation-menu-item header__navigation-menu__item"
-                >
-                  <a class="cv-back__link" href="#">contacts</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="burger header__burger burger_close">
-              <div class="first-line burger__item"></div>
-              <div class="second-line burger__item"></div>
-              <div class="third-line burger__item"></div>
-            </div>
-          </header>
-          <main class="main-content cv-back__row cv-back__main">
-            <div class="cv-column main-content__column">
-              <div class="education cv-column__education">
-                <div class="title education__title title_line">
+          <main class="main-content cv__row cv-back__main">
+            <div class="cv-column main-content__column cv-column_left">
+              <div class="education cv-column-block cv-column__education">
+                <div id="education" class="title education__title title_line">
                   my EDUCATION
                 </div>
                 <div class="content education__content">
@@ -81,29 +69,40 @@
                   </p>
                 </div>
               </div>
-
-              <div class="language cv-column__language">
-                <div class="title language__title title_line">my LANGUAGE</div>
-                <div class="content language__content">
-                  <p class="language__item">Russian - Native</p>
-                  <p class="language__item">English - A2</p>
-                  <p class="language__item">Polish - B1</p>
+              <div class="certificate cv-column-block cv-column__certificate">
+                <div class="title education__title title_line">
+                  my CERTIFICATE
+                </div>
+                <div class="content certificate__content">
+                  <div class="photo certificate__photo">
+                    <a
+                      class="photo__link"
+                      href="https://app.rs.school/certificate/pbhg4upn"
+                      ><img
+                        class="photo__link-img"
+                        src="./resources/img//certificate/pre_school.jpg"
+                        alt="basic_certificate"
+                    /></a>
+                  </div>
+                  <div class="photo certificate__photo">
+                    <a
+                      class="photo__link"
+                      href="https://app.rs.school/certificate/px8yc5am"
+                      target="_blank"
+                      ><img
+                        class="photo__link-img"
+                        src="./resources/img//certificate/adv_school.jpg"
+                        alt="advance_certificate"
+                    /></a>
+                  </div>
                 </div>
               </div>
-              <div class="photo about__photo_left">
-                <a
-                  class="photo__link"
-                  href="https://app.rs.school/certificate/pbhg4upn"
-                  ><img
-                    class="photo__link"
-                    src="./resources/img//certificate/pre_school.jpg"
-                    alt="basic_certificate"
-                /></a>
-              </div>
             </div>
-            <div class="cv-column main-content__column cv-column_bordered">
-              <div class="cv-column__about">
-                <div class="about-photo profile__photo">
+            <div
+              class="cv-column main-content__column cv-column_bordered cv-column_center"
+            >
+              <div class="about cv-column-block cv-column__about">
+                <div id="about" class="photo profile__photo">
                   <img
                     class="photo__item"
                     src="./resources/img/photo/myphoto.jpg"
@@ -117,25 +116,25 @@
                     Junior Frontend Developer
                   </p>
                   <p class="about__item">Minsk, Belarus</p>
-                  <p class="about__item">12.01.1995</p>
+                  <p class="years about__item">12.01.1995</p>
                   <p class="about__item">+375-29 231-07-31</p>
                 </div>
-
-                <div class="photo">
-                  <a
-                    class="photo__link"
-                    href="https://app.rs.school/certificate/px8yc5am"
-                    target="_blank"
-                    ><img
-                      class="photo__link"
-                      src="./resources/img//certificate/adv_school.jpg"
-                      alt="advance_certificate"
-                  /></a>
+              </div>
+              <div
+                id="languages"
+                class="language cv-column-block cv-column__language"
+              >
+                <div class="title language__title title_line">my LANGUAGE</div>
+                <div class="content language__content">
+                  <p class="language__item about__item">Russian - Native</p>
+                  <p class="language__item about__item">English - A2</p>
+                  <p class="language__item about__item">Polish - B1</p>
                 </div>
               </div>
+              <div class="about-border__item"></div>
             </div>
-            <div class="cv-column main-content__column">
-              <div class="skills cv-column__skills">
+            <div class="cv-column main-content__column cv-column_right">
+              <div id="skills" class="skills cv-column-block cv-column__skills">
                 <div class="title skills__title title_line">my SKILLS</div>
                 <div class="content skills__content">
                   <ul class="list skills__list">
@@ -591,7 +590,10 @@
                   </ul>
                 </div>
               </div>
-              <div class="skills cv-column__project">
+              <div
+                id="projects"
+                class="project cv-column-block cv-column__project"
+              >
                 <div class="title project__title title_line">my PROJECTS</div>
                 <div class="content project__content">
                   <div class="imgs project__imgs">
@@ -685,38 +687,92 @@
               </div>
             </div>
           </main>
-          <footer class="footer cv-back__row cv-back__footer">
-            <nav class="cv-back-navigation footer__navigation">
-              <ul class="cv-back-navigation-menu footer__navigation-menu">
+          <footer id="contacts" class="footer cv__row cv-back__footer">
+            <nav class="cv-navigation footer__navigation">
+              <ul class="cv-navigation-menu footer__navigation-menu">
                 <li
-                  class="cv-back-navigation-menu-item footer_navigation-menu__item"
+                  class="cv-navigation-menu-item footer_navigation-menu__item"
                 >
-                  <a class="cv-back__link" href="#">linkedIn</a>
+                  <a
+                    class="cv__link"
+                    href="https://www.linkedin.com/in/artsiom-mikula-495a73221/"
+                    target="_blank"
+                    ><svg class="link__icon">
+                      <use
+                        xlink:href="./resources/icons/contacts/linkedin.svg#linkedin"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
                 <li
-                  class="cv-back-navigation-menu-item footer_navigation-menu__item"
+                  class="cv-navigation-menu-item footer_navigation-menu__item"
                 >
-                  <a class="cv-back__link" href="#">rabota.by</a>
+                  <a
+                    class="cv__link"
+                    href="https://rabota.by/resume/8e066c9aff0b966e3d0039ed1f55596c554a6a"
+                    target="_blank"
+                    ><svg class="link__icon">
+                      <use
+                        xlink:href="./resources/icons/contacts/rabota.svg#rabota"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
                 <li
-                  class="cv-back-navigation-menu-item footer_navigation-menu__item"
+                  class="cv-navigation-menu-item footer_navigation-menu__item"
                 >
-                  <a class="cv-back__link" href="#">github</a>
+                  <a
+                    class="cv__link"
+                    href="https://github.com/ligalaz"
+                    target="_blank"
+                  >
+                    <svg class="link__icon">
+                      <use
+                        xlink:href="./resources/icons/contacts/github.svg#github"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
                 <li
-                  class="cv-back-navigation-menu-item footer_navigation-menu__item cv-back-navigation-menu-item_middle"
+                  class="cv-navigation-menu-item footer_navigation-menu__item cv-navigation-menu-item_middle"
                 >
-                  <a class="cv-back__link" href="#"> phone</a>
+                  <a class="cv__link" href="tel:+375292310731" target="_blank">
+                    <svg class="link__icon">
+                      <use
+                        xlink:href="./resources/icons/contacts/phone.svg#phone"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
                 <li
-                  class="cv-back-navigation-menu-item footer_navigation-menu__item"
+                  class="cv-navigation-menu-item footer_navigation-menu__item"
                 >
-                  <a class="cv-back__link" href="#">mail</a>
+                  <a
+                    class="cv__link"
+                    href="mailto:95artm.mick@gmail.com"
+                    target="_blank"
+                  >
+                    <svg class="link__icon">
+                      <use
+                        xlink:href="./resources/icons/contacts/gmail.svg#gmail"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
                 <li
-                  class="cv-back-navigation-menu-item footer_navigation-menu__item"
+                  class="cv-navigation-menu-item footer_navigation-menu__item"
                 >
-                  <a class="cv-back__link" href="#">discord</a>
+                  <a
+                    class="cv__link"
+                    href="https://discordapp.com/users/742091236944511088"
+                    target="_blank"
+                  >
+                    <svg class="link__icon">
+                      <use
+                        xlink:href="./resources/icons/contacts/discord.svg#discord"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </nav>

@@ -1,13 +1,15 @@
 :root {
   --main_font: "Montserrat";
-  --title_font: "Playfair";
+  --title_font: "Pacifico";
   --link_font: "Playfair";
-  --author_font: "Pacifico";
+  --author_font: "Playfair";
+  --burger-link_font: "Pacifico";
 
-  --main_size: 0.8rem;
-  --author-title_size: 1.4rem;
   --title_size: 1.2rem;
+  --author-title_size: 1.4rem;
   --link_size: 1.1rem;
+  --burger-link_size: 1.4rem;
+  --main_size: 0.8rem;
   --author-text_size: 1.1rem;
   --modal-text_size: 2rem;
 }
@@ -15,13 +17,24 @@
 [data-theme="dark"] {
   --bg_color: #28313b;
   --bg-cv_color: rgba(0, 0, 0, 0.49);
+  --bg-modal_color: rgba(0, 0, 0, 0.817);
+  --bg-navigation_color: black;
+
   --main-text_color: #fff;
+
   --link_color: #fff;
-  --burger_color: #fff;
-  --switcher_color: #fff;
-  --border_color: coral;
   --active-link_color: coral;
-  --active-burger_color: coral;
+  --burger_color: #fff;
+
+  --burger-open_color: coral;
+  --modal-arrow_color: #fff;
+  --modal-arrow-active_color: coral;
+  --close_color: rgba(203, 14, 14, 0.624);
+  --switcher_color: #fff;
+
+  --border_color: coral;
+  --border-photo_color: rgba(255, 255, 255, 0.7);
+  --border-close_color: #fff;
 }
 
 [data-theme="light"] {
