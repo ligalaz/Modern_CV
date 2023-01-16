@@ -9,6 +9,7 @@
   --title_size: 1.2rem;
   --link_size: 1.1rem;
   --author-text_size: 1.1rem;
+  --modal-text_size: 2rem;
 }
 
 [data-theme="dark"] {
