@@ -1,3 +1,5 @@
+import Reverser from "./reverser.js";
+
 class Navigation {
   constructor(burger, navigation) {
     this.burger = burger;
@@ -6,6 +8,12 @@ class Navigation {
     this.burgerOpen = `burger_open`;
     this.navigationActive = `header__navigation_active`;
     this.activeLink = `cv__link_active`;
+    this.linkOpacity = `cv__link_step_opacity`;
+
+    this.reverser = new Reverser(
+      document.querySelector(`.cv-back`),
+      document.querySelector(`.cv-front`),
+    );
   }
 
   initHosts() {
@@ -17,6 +25,8 @@ class Navigation {
       e.currentTarget.classList.contains(this.burgerOpen)
         ? this.hideNavigation()
         : this.showNavigation();
+
+      this.linksAnimationToggle(e, 0.5);
     });
 
     window.addEventListener("resize", () => {
@@ -46,6 +56,18 @@ class Navigation {
         : link.classList.add(this.activeLink),
     );
     this.hideNavigation();
+    this.reverser.navigateReverse();
+  };
+
+  linksAnimationToggle = (e, ms) => {
+    e.currentTarget.classList.contains(this.burgerOpen)
+      ? this.links.forEach((link, idx) => {
+          link.classList.add(this.linkOpacity);
+          link.style.animationDelay = `${idx * ms}s`;
+        })
+      : this.links.forEach((link) => {
+          link.classList.remove(this.linkOpacity);
+        });
   };
 
   hideNavigation = () => {
