@@ -1,11 +1,13 @@
 :root {
   --main_font: "Montserrat";
   --title_font: "Playfair";
+  --link_font: "Playfair";
   --author_font: "Pacifico";
 
-  --main_size: 1rem;
-  --author-name_size: 1.4rem;
+  --main_size: 0.8rem;
+  --author-title_size: 1.4rem;
   --title_size: 1.2rem;
+  --link_size: 1.1rem;
   --author-text_size: 1.1rem;
 }
 
@@ -16,7 +18,7 @@
   --link_color: #fff;
   --burger_color: #fff;
   --switcher_color: #fff;
-  --skills-round_color: #fff;
+  --border_color: coral;
   --active-link_color: coral;
   --active-burger_color: coral;
 }
