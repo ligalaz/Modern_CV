@@ -8,36 +8,60 @@
     <link rel="stylesheet" href="./resources/styles/style.css" />
     <title>Artsiom Mikula CV</title>
   </head>
-  <body data-theme="dark">
+  <body class="body_front" data-theme="dark">
     <div class="cv cv__container">
       <header class="header cv__row cv-back__header">
         <nav class="cv-navigation header__navigation">
           <ul class="cv-navigation-menu header__navigation-menu">
             <li class="cv-navigation-menu-item header__navigation-menu__item">
-              <a class="cv__link cv__link_active cv__link_tablet" href="#about"
-                >about me</a
+              <a
+                class="cv__link cv__link_active cv__link_tablet"
+                href="#about"
+                data-language="about"
+                >About me</a
               >
             </li>
             <li class="cv-navigation-menu-item header__navigation-menu__item">
-              <a class="cv__link cv__link_tablet" href="#languages"
-                >languages</a
+              <a
+                class="cv__link cv__link_tablet"
+                href="#languages"
+                data-language="languages"
+                >Languages</a
               >
             </li>
             <li class="cv-navigation-menu-item header__navigation-menu__item">
-              <a class="cv__link cv__link_tablet" href="#skills">skills</a>
+              <a
+                class="cv__link cv__link_tablet"
+                href="#skills"
+                data-language="skills"
+                >Skills</a
+              >
             </li>
             <li
               class="cv-navigation-menu-item header__navigation-menu__item cv-navigation-menu-item_middle"
             >
-              <a class="cv__link cv__link_tablet" href="#projects">projects</a>
+              <a
+                class="cv__link cv__link_tablet"
+                href="#projects"
+                data-language="projects"
+                >Projects</a
+              >
             </li>
             <li class="cv-avigation-menu-item header__navigation-menu__item">
-              <a class="cv__link cv__link_tablet" href="#education"
-                >education</a
+              <a
+                class="cv__link cv__link_tablet"
+                href="#education"
+                data-language="education"
+                >Education</a
               >
             </li>
             <li class="cv-navigation-menu-item header__navigation-menu__item">
-              <a class="cv__link cv__link_tablet" href="#contacts">contacts</a>
+              <a
+                class="cv__link cv__link_tablet"
+                href="#contacts"
+                data-language="contacts"
+                >Contacts</a
+              >
             </li>
           </ul>
         </nav>
@@ -48,35 +72,82 @@
         </div>
       </header>
       <div class="cv-card">
-        <div class="cv-front cv-card__item"></div>
+        <div class="controller cv__controller controller_reverser">
+          <div class="reverser controller__item">
+            <button class="button controller__button">
+              <svg class="reverser_on button__icon">
+                <use
+                  xlink:href="./resources/icons/controllers/reverse.svg#reverse"
+                ></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="controller cv__controller controller_switcher">
+          <div class="switcher controller__item">
+            <button class="button controller__button">
+              <svg class="switcher_on button__icon">
+                <use
+                  xlink:href="./resources/icons/controllers/switcher.svg#switcher"
+                ></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="cv-front cv-card__item">
+          <div class="cv-front__info" data-language="cv_title">CV</div>
+        </div>
         <div class="cv-back cv-card__item">
           <main class="main-content cv__row cv-back__main">
             <div class="cv-column main-content__column cv-column_left">
               <div class="education cv-column-block cv-column__education">
-                <div id="education" class="title education__title title_line">
+                <div
+                  id="education"
+                  class="title education__title title_line"
+                  data-language="education_title"
+                >
                   my EDUCATION
                 </div>
                 <div class="content education__content">
-                  <p class="title education__title title_mini">
+                  <p
+                    class="title education__title title_mini"
+                    data-language="first_speciality"
+                  >
                     Thermal Power Engineer
                   </p>
-                  <p class="years education__years">SEP 2012 - JUN 2017</p>
-                  <p class="community education__community">
+                  <p class="years education__years" data-language="first_year">
+                    SEP 2012 - JUN 2017
+                  </p>
+                  <p
+                    class="community education__community"
+                    data-language="first_university"
+                  >
                     Belarusian national technical university
                   </p>
                 </div>
                 <div class="content education__content">
-                  <p class="title education__title title_mini">
+                  <p
+                    class="title education__title title_mini"
+                    data-language="second_speciality"
+                  >
                     Frontend Developer
                   </p>
-                  <p class="years education__years">DEC 2021 - SEP 2022</p>
-                  <p class="community education__community">
+                  <p class="years education__years" data-language="second_year">
+                    DEC 2021 - SEP 2022
+                  </p>
+                  <p
+                    class="community education__community"
+                    data-language="second_university"
+                  >
                     The Rolling Scopes School
                   </p>
                 </div>
               </div>
               <div class="certificate cv-column-block cv-column__certificate">
-                <div class="title education__title title_line">
+                <div
+                  class="title education__title title_line"
+                  data-language="certificate_title"
+                >
                   my CERTIFICATE
                 </div>
                 <div class="content certificate__content">
@@ -105,43 +176,88 @@
               </div>
             </div>
             <div
+              id="about"
               class="cv-column main-content__column cv-column_bordered cv-column_center"
             >
               <div class="about cv-column-block cv-column__about">
-                <div id="about" class="photo profile__photo">
+                <div class="controller cv__controller controller_language">
+                  <p
+                    id="en"
+                    class="first-language controller-language__item controller-language_active"
+                  >
+                    EN
+                  </p>
+                  <p class="slash controller__item">|</p>
+                  <p id="ru" class="second-language controller-language__item">
+                    РУ
+                  </p>
+                </div>
+                <div id="languages" class="photo profile__photo">
                   <img
                     class="photo__item"
                     src="./resources/img/photo/myphoto.jpg"
                     alt="my_photo"
                   />
                 </div>
-                <div class="title title_line">about ME</div>
+                <div class="title title_line" data-language="about_title">
+                  about ME
+                </div>
                 <div class="content about__content">
-                  <p class="title about__title title_author">ARTSIOM MIKULA</p>
-                  <p class="title about__title title_mini">
+                  <p
+                    id="contacts"
+                    class="title about__title title_author"
+                    data-language="name"
+                  >
+                    ARTSIOM MIKULA
+                  </p>
+                  <p class="title about__title title_mini" data-language="job">
                     Junior Frontend Developer
                   </p>
-                  <p class="about__item">Minsk, Belarus</p>
+                  <p class="about__item" data-language="location">
+                    Minsk, Belarus
+                  </p>
                   <p class="years about__item">12.01.1995</p>
                   <p class="about__item">+375-29 231-07-31</p>
                 </div>
               </div>
-              <div
-                id="languages"
-                class="language cv-column-block cv-column__language"
-              >
-                <div class="title language__title title_line">my LANGUAGE</div>
+              <div class="language cv-column-block cv-column__language">
+                <div
+                  class="title language__title title_line"
+                  data-language="languages_title"
+                >
+                  my LANGUAGES
+                </div>
                 <div class="content language__content">
-                  <p class="language__item about__item">Russian - Native</p>
-                  <p class="language__item about__item">English - A2</p>
-                  <p class="language__item about__item">Polish - B1</p>
+                  <p
+                    class="language__item about__item"
+                    data-language="first_language"
+                  >
+                    Russian - Native
+                  </p>
+                  <p
+                    class="language__item about__item"
+                    data-language="second_language"
+                  >
+                    English - A2
+                  </p>
+                  <p
+                    class="language__item about__item"
+                    data-language="third_language"
+                  >
+                    Polish - B1
+                  </p>
                 </div>
               </div>
               <div class="about-border__item"></div>
             </div>
             <div class="cv-column main-content__column cv-column_right">
               <div id="skills" class="skills cv-column-block cv-column__skills">
-                <div class="title skills__title title_line">my SKILLS</div>
+                <div
+                  class="title skills__title title_line"
+                  data-language="skills_title"
+                >
+                  my SKILLS
+                </div>
                 <div class="content skills__content">
                   <ul class="list skills__list">
                     <li class="list-item skills__item">
@@ -293,7 +409,7 @@
                         ></circle>
                       </svg>
                     </li>
-                    <li class="list-item skills__item">
+                    <li id="projects" class="list-item skills__item">
                       <svg
                         width="100%"
                         height="100%"
@@ -596,11 +712,13 @@
                   </ul>
                 </div>
               </div>
-              <div
-                id="projects"
-                class="project cv-column-block cv-column__project"
-              >
-                <div class="title project__title title_line">my PROJECTS</div>
+              <div class="project cv-column-block cv-column__project">
+                <div
+                  class="title project__title title_line"
+                  data-language="projects_title"
+                >
+                  my PROJECTS
+                </div>
                 <div class="content project__content">
                   <div class="imgs project__imgs">
                     <div class="project__item">
@@ -693,7 +811,8 @@
               </div>
             </div>
           </main>
-          <footer id="contacts" class="footer cv__row cv-back__footer">
+          <footer class="footer cv__row cv-back__footer">
+            <div class="title" data-language="contacts_title">Find me in:</div>
             <nav class="cv-navigation footer__navigation">
               <ul class="cv-navigation-menu footer__navigation-menu">
                 <li
@@ -785,7 +904,6 @@
           </footer>
         </div>
       </div>
-      <div class="reverser"><button>Reverser</button></div>
     </div>
     <div class="modal cv__modal">
       <div class="modal-close cv__modal-close">

@@ -12,6 +12,7 @@
   --main_size: 0.8rem;
   --author-text_size: 1.1rem;
   --modal-text_size: 2rem;
+  --info_size: 4rem;
 }
 
 [data-theme="dark"] {
@@ -21,16 +22,18 @@
   --bg-navigation_color: black;
 
   --main-text_color: #fff;
+  --info-text_color: #fff;
 
   --link_color: #fff;
   --active-link_color: coral;
+  --button_color: #fff;
+  --button-active_color: coral;
   --burger_color: #fff;
-
   --burger-open_color: coral;
   --modal-arrow_color: #fff;
   --modal-arrow-active_color: coral;
   --close_color: rgba(203, 14, 14, 0.624);
-  --switcher_color: #fff;
+  --close-active_color: rgba(12, 20, 93, 0.9);
 
   --border_color: coral;
   --border-photo_color: rgba(255, 255, 255, 0.7);
@@ -39,10 +42,25 @@
 
 [data-theme="light"] {
   --bg_color: #f0e2ec;
-  --bg-cv_color: rgba(210, 238, 0, 0.766);
+  --bg-cv_color: rgba(210, 238, 0, 0.527);
+  --bg-modal_color: rgba(0, 0, 0, 0.9);
+  --bg-navigation_color: #fff;
+
   --main-text_color: rgba(12, 20, 93, 0.9);
+  --info-text_color: rgba(12, 20, 93, 0.9);
+
   --link_color: rgba(12, 20, 93, 0.9);
-  --switcher_color: rgba(12, 20, 93, 0.9);
-  --skills-round_color: rgba(12, 20, 93, 0.9);
-  --active-link_color: coral;
+  --active-link_color: #28313b;
+  --button_color: #28313b;
+  --button-active_color: #fff;
+  --burger_color: rgba(12, 20, 93, 0.9);
+  --burger-open_color: #28313b;
+  --modal-arrow_color: rgba(12, 20, 93, 0.9);
+  --modal-arrow-active_color: #fff;
+  --close_color: rgba(12, 20, 93, 0.9);
+  --close-active_color: rgba(203, 14, 14, 0.624);
+
+  --border_color: rgba(12, 20, 93, 0.9);
+  --border-photo_color: #fff;
+  --border-close_color: #fff;
 }
