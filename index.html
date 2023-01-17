@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./resources/icons/favicons/favicon.png" />
+    <link rel="stylesheet" href="./resources/styles/style.css" />
+    <title>Artsiom Mikula CV</title>
+  </head>
+  <body class="body_front" data-theme="dark">
+    <div class="cv cv__container">
+      <header class="header cv__row cv-back__header">
+        <nav class="cv-navigation header__navigation">
+          <ul class="cv-navigation-menu header__navigation-menu">
+            <li class="cv-navigation-menu-item header__navigation-menu__item">
+              <a
+                class="cv__link cv__link_active cv__link_tablet"
+                href="#about"
+                data-language="about"
+                >About me</a
+              >
+            </li>
+            <li class="cv-navigation-menu-item header__navigation-menu__item">
+              <a
+                class="cv__link cv__link_tablet"
+                href="#languages"
+                data-language="languages"
+                >Languages</a
+              >
+            </li>
+            <li class="cv-navigation-menu-item header__navigation-menu__item">
+              <a
+                class="cv__link cv__link_tablet"
+                href="#skills"
+                data-language="skills"
+                >Skills</a
+              >
+            </li>
+            <li
+              class="cv-navigation-menu-item header__navigation-menu__item cv-navigation-menu-item_middle"
+            >
+              <a
+                class="cv__link cv__link_tablet"
+                href="#projects"
+                data-language="projects"
+                >Projects</a
+              >
+            </li>
+            <li class="cv-avigation-menu-item header__navigation-menu__item">
+              <a
+                class="cv__link cv__link_tablet"
+                href="#education"
+                data-language="education"
+                >Education</a
+              >
+            </li>
+            <li class="cv-navigation-menu-item header__navigation-menu__item">
+              <a
+                class="cv__link cv__link_tablet"
+                href="#contacts"
+                data-language="contacts"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="burger header__burger burger_close">
+          <div class="first-line burger__item"></div>
+          <div class="second-line burger__item"></div>
+          <div class="third-line burger__item"></div>
+        </div>
+      </header>
+      <div class="cv-card">
+        <div class="controller cv__controller controller_reverser">
+          <div class="reverser controller__item">
+            <button class="button controller__button">
+              <svg class="reverser_on button__icon">
+                <use
+                  xlink:href="./resources/icons/controllers/reverse.svg#reverse"
+                ></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="controller cv__controller controller_switcher">
+          <div class="switcher controller__item">
+            <button class="button controller__button">
+              <svg class="switcher_on button__icon">
+                <use
+                  xlink:href="./resources/icons/controllers/switcher.svg#switcher"
+                ></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="cv-front cv-card__item">
+          <div class="cv-front__info" data-language="cv_title">CV</div>
+        </div>
+        <div class="cv-back cv-card__item">
+          <main class="main-content cv__row cv-back__main">
+            <div class="cv-column main-content__column cv-column_left">
+              <div class="education cv-column-block cv-column__education">
+                <div
+                  id="education"
+                  class="title education__title title_line"
+                  data-language="education_title"
+                >
+                  my EDUCATION
+                </div>
+                <div class="content education__content">
+                  <p
+                    class="title education__title title_mini"
+                    data-language="first_speciality"
+                  >
+                    Thermal Power Engineer
+                  </p>
+                  <p class="years education__years" data-language="first_year">
+                    SEP 2012 - JUN 2017
+                  </p>
+                  <p
+                    class="community education__community"
+                    data-language="first_university"
+                  >
+                    Belarusian national technical university
+                  </p>
+                </div>
+                <div class="content education__content">
+                  <p
+                    class="title education__title title_mini"
+                    data-language="second_speciality"
+                  >
+                    Frontend Developer
+                  </p>
+                  <p class="years education__years" data-language="second_year">
+                    DEC 2021 - SEP 2022
+                  </p>
+                  <p
+                    class="community education__community"
+                    data-language="second_university"
+                  >
+                    The Rolling Scopes School
+                  </p>
+                </div>
+              </div>
+              <div class="certificate cv-column-block cv-column__certificate">
+                <div
+                  class="title education__title title_line"
+                  data-language="certificate_title"
+                >
+                  my CERTIFICATE
+                </div>
+                <div class="content certificate__content">
+                  <div class="photo certificate__photo">
+                    <a
+                      class="photo__link"
+                      href="https://app.rs.school/certificate/pbhg4upn"
+                      ><img
+                        class="photo__link-img"
+                        src="./resources/img//certificate/pre_school.jpg"
+                        alt="basic_certificate"
+                    /></a>
+                  </div>
+                  <div class="photo certificate__photo">
+                    <a
+                      class="photo__link"
+                      href="https://app.rs.school/certificate/px8yc5am"
+                      target="_blank"
+                      ><img
+                        class="photo__link-img"
+                        src="./resources/img//certificate/adv_school.jpg"
+                        alt="advance_certificate"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              id="about"
+              class="cv-column main-content__column cv-column_bordered cv-column_center"
+            >
+              <div class="about cv-column-block cv-column__about">
+                <div class="controller cv__controller controller_language">
+                  <p
+                    id="en"
+                    class="first-language controller-language__item controller-language_active"
+                  >
+                    EN
+                  </p>
+                  <p class="slash controller__item">|</p>
+                  <p id="ru" class="second-language controller-language__item">
+                    РУ
+                  </p>
+                </div>
+                <div id="languages" class="photo profile__photo">
+                  <img
+                    class="photo__item"
+                    src="./resources/img/photo/myphoto.jpg"
+                    alt="my_photo"
+                  />
+                </div>
+                <div class="title title_line" data-language="about_title">
+                  about ME
+                </div>
+                <div class="content about__content">
+                  <p
+                    id="contacts"
+                    class="title about__title title_author"
+                    data-language="name"
+                  >
+                    ARTSIOM MIKULA
+                  </p>
+                  <p class="title about__title title_mini" data-language="job">
+                    Junior Frontend Developer
+                  </p>
+                  <p class="about__item" data-language="location">
+                    Minsk, Belarus
+                  </p>
+                  <p class="years about__item">12.01.1995</p>
+                  <p class="about__item">+375-29 231-07-31</p>
+                </div>
+              </div>
+              <div class="language cv-column-block cv-column__language">
+                <div
+                  class="title language__title title_line"
+                  data-language="languages_title"
+                >
+                  my LANGUAGES
+                </div>
+                <div class="content language__content">
+                  <p
+                    class="language__item about__item"
+                    data-language="first_language"
+                  >
+                    Russian - Native
+                  </p>
+                  <p
+                    class="language__item about__item"
+                    data-language="second_language"
+                  >
+                    English - A2
+                  </p>
+                  <p
+                    class="language__item about__item"
+                    data-language="third_language"
+                  >
+                    Polish - B1
+                  </p>
+                </div>
+              </div>
+              <div class="about-border__item"></div>
+            </div>
+            <div class="cv-column main-content__column cv-column_right">
+              <div id="skills" class="skills cv-column-block cv-column__skills">
+                <div
+                  class="title skills__title title_line"
+                  data-language="skills_title"
+                >
+                  my SKILLS
+                </div>
+                <div class="content skills__content">
+                  <ul class="list skills__list">
+                    <li class="list-item skills__item">
+                      <svg
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 42 42"
+                        class="circle"
+                      >
+                        <defs>
+                          <pattern
+                            id="javascript"
+                            x="0"
+                            y="0"
+                            height="1"
+                            width="1"
+                          >
+                            <image
+                              x="6"
+                              y="6"
+                              height="20px"
+                              width="20px"
+                              href="./resources/icons/skills/javascript.svg"
+                            ></image>
+                          </pattern>
+                        </defs>
+                        <circle
+                          class="circle-body"
+                          cx="21"
+                          cy="21"
+                          r="16"
+                          fill="url(#javascript)"
+                        ></circle>
+                        <circle
+                          class="circle-ring"
+                          cx="21"
+                          cy="21"
+                          r="16"
+                          fill="transparent"
+                          stroke="transparent"
+                          stroke-width="3"
+                        ></circle>
+                        <circle
+                          class="circle-level"
+                          cx="21"
+                          cy="21"
+                          r="16"
+                          fill="transparent"
+                          stroke="#fff"
+                          stroke-width="3"
+                          stroke-dasharray="90 10"
+                          stroke-dashoffset="25"
+                        ></circle>
+                      </svg>
+                    </li>
+
+                    <li class="list-item skills__item">
+                      <svg
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 42 42"
+                        class="circle"
+                      >
+                        <defs>
+                          <pattern id="html5" x="0" y="0" height="1" width="1">
+                            <image
+                              x="6"
+                              y="6"
+                              height="20px"
+                              width="20px"
+                              href="./resources/icons/skills/html5.svg"
+                            ></image>
+                          </pattern>
+                        </defs>
+                        <circle
+                          class="circle-body"
+                          cx="21"
+                          cy="21"
+                          r="16"
+                          fill="url(#html5)"
+                        ></circle>
+                        <circle
+                          class="circle-ring"
+                          cx="21"
+                          cy="21"
+                          r="16"
+                          fill="transparent"
+                          stroke="transparent"
+                          stroke-width="3"
+                        ></circle>
+                        <circle
+                          class="circle-level"
+                          cx="21"
+                          cy="21"
+                          r="16"
+                          fill="transparent"
+                          stroke="#fff"
+                          stroke-width="3"
+                          stroke-dasharray="100 0"
+                          stroke-dashoffset="25"
+                        ></circle>
+                      </svg>
+                    </li>
+
+                    <li class="list-item skills__item">
+                      <svg
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 42 42"
+                        class="circle"
+                      >
+                        <defs>
+                          <pattern id="css3" x="0" y="0" height="1" width="1">
+                            <image
+                              x="6"
+                              y="6"
+                              height="20px"
+                              width="20px"
+                              href="./resources/icons/skills/css3.svg"
+                            ></image>
+                          </pattern>
+                        </defs>
+                        <circle
+                          class="circle-body"
+                          cx="21"
+                          cy="21"
+                          r="16"
+                          fill="url(#css3)"
+                        ></circle>
+                        <circle
+                          class="circle-ring"
+                          cx="21"
+                          cy="21"
+                          r="16"
+                          fill="transparent"
+                          stroke="transparent"
+                          stroke-width="3"
+                        ></circle>
+                        <circle
+                          class="circle-level"
+                          cx="21"
+                          cy="21"
+                          r="16"
+                          fill="transparent"
+                          stroke="#fff"
+                          stroke-width="3"
+                          stroke-dasharray="90 10"
+                          stroke-dashoffset="25"
+                        ></circle>
+                      </svg>
+                    </li>
+                    <li id="projects" class="list-item skills__item">
+                      <svg
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 42 42"
+                        class="circle"
+                      >
+                        <defs>
+                          <pattern
+                            id="typescript"
+                            x="0"
+                            y="0"
+                            height="1"
+                            width="1"
+                          >
+                            <image
+                              x="6"
+                              y="6"
+                              height="20px"
+                              width="20px"
+                              href="./resources/icons/skills/typescript.svg"
+                            ></image>
+                          </pattern>
+                        </defs>
+                        <circle
+                          class="circle-body"
+                          cx="21"
+                          cy="21"
+                          r="16"
+                          fill="url(#typescript)"
+                        ></circle>
+                        <circle
+                          class="circle-ring"
+                          cx="21"
+                          cy="21"
+                          r="16"
+                          fill="transparent"
+                          stroke="transparent"
+                          stroke-width="3"
+                        ></circle>
+                        <circle
+                          class="circle-level"
+                          cx="21"
+                          cy="21"
+                          r="16"
+                          fill="transparent"
+                          stroke="#fff"
+                          stroke-width="3"
+                          stroke-dasharray="80 20"
+                          stroke-dashoffset="25"
+                        ></circle>
+                      </svg>
+                    </li>
+                    <li class="list-item skills__item">
+                      <svg
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 42 42"
+                        class="circle"
+                      >
+                        <defs>
+                          <pattern id="react" x="0" y="0" height="1" width="1">
+                            <image
+                              x="6"
+                              y="6"
+                              height="20px"
+                              width="20px"
+                              href="./resources/icons/skills/react.svg"
+                            ></image>
+                          </pattern>
+                        </defs>
+                        <circle
+                          class="circle-body"
+                          cx="21"
+                          cy="21"
+                          r="16"
+                          fill="url(#react)"
+                        ></circle>
+                        <circle
+                          class="circle-ring"
+                          cx="21"
+                          cy="21"
+                          r="16"
+                          fill="transparent"
+                          stroke="transparent"
+                          stroke-width="3"
+                        ></circle>
+                        <circle
+                          class="circle-level"
+                          cx="21"
+                          cy="21"
+                          r="16"
+                          fill="transparent"
+                          stroke="#fff"
+                          stroke-width="3"
+                          stroke-dasharray="70 30"
+                          stroke-dashoffset="25"
+                        ></circle>
+                      </svg>
+                    </li>
+                    <li class="list-item skills__item">
+                      <svg
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 42 42"
+                        class="circle"
+                      >
+                        <defs>
+                          <pattern id="sass" x="0" y="0" height="1" width="1">
+                            <image
+                              x="6"
+                              y="6"
+                              height="20px"
+                              width="20px"
+                              href="./resources/icons/skills/sass.svg"
+                            ></image>
+                          </pattern>
+                        </defs>
+                        <circle
+                          class="circle-body"
+                          cx="21"
+                          cy="21"
+                          r="16"
+                          fill="url(#sass)"
+                        ></circle>
+                        <circle
+                          class="circle-ring"
+                          cx="21"
+                          cy="21"
+                          r="16"
+                          fill="transparent"
+                          stroke="transparent"
+                          stroke-width="3"
+                        ></circle>
+                        <circle
+                          class="circle-level"
+                          cx="21"
+                          cy="21"
+                          r="16"
+                          fill="transparent"
+                          stroke="#fff"
+                          stroke-width="3"
+                          stroke-dasharray="80 20"
+                          stroke-dashoffset="25"
+                        ></circle>
+                      </svg>
+                    </li>
+                    <li class="list-item skills__item">
+                      <svg
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 42 42"
+                        class="circle"
+                      >
+                        <defs>
+                          <pattern id="git" x="0" y="0" height="1" width="1">
+                            <image
+                              x="6"
+                              y="6"
+                              height="20px"
+                              width="20px"
+                              href="./resources/icons/skills/github.svg"
+                            ></image>
+                          </pattern>
+                        </defs>
+                        <circle
+                          class="circle-body"
+                          cx="21"
+                          cy="21"
+                          r="16"
+                          fill="url(#git)"
+                        ></circle>
+                        <circle
+                          class="circle-ring"
+                          cx="21"
+                          cy="21"
+                          r="16"
+                          fill="transparent"
+                          stroke="transparent"
+                          stroke-width="3"
+                        ></circle>
+                        <circle
+                          class="circle-level"
+                          cx="21"
+                          cy="21"
+                          r="16"
+                          fill="transparent"
+                          stroke="#fff"
+                          stroke-width="3"
+                          stroke-dasharray="80 20"
+                          stroke-dashoffset="25"
+                        ></circle>
+                      </svg>
+                    </li>
+                    <li class="list-item skills__item">
+                      <svg
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 42 42"
+                        class="circle"
+                      >
+                        <defs>
+                          <pattern
+                            id="webpack"
+                            x="0"
+                            y="0"
+                            height="1"
+                            width="1"
+                          >
+                            <image
+                              x="6"
+                              y="6"
+                              height="20px"
+                              width="20px"
+                              href="./resources/icons/skills/webpack.svg"
+                            ></image>
+                          </pattern>
+                        </defs>
+                        <circle
+                          class="circle-body"
+                          cx="21"
+                          cy="21"
+                          r="16"
+                          fill="url(#webpack)"
+                        ></circle>
+                        <circle
+                          class="circle-ring"
+                          cx="21"
+                          cy="21"
+                          r="16"
+                          fill="transparent"
+                          stroke="transparent"
+                          stroke-width="3"
+                        ></circle>
+                        <circle
+                          class="circle-level"
+                          cx="21"
+                          cy="21"
+                          r="16"
+                          fill="transparent"
+                          stroke="#fff"
+                          stroke-width="3"
+                          stroke-dasharray="75 25"
+                          stroke-dashoffset="25"
+                        ></circle>
+                      </svg>
+                    </li>
+                    <li class="list-item skills__item">
+                      <svg
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 42 42"
+                        class="circle"
+                      >
+                        <defs>
+                          <pattern
+                            id="codewars"
+                            x="0"
+                            y="0"
+                            height="1"
+                            width="1"
+                          >
+                            <image
+                              x="6"
+                              y="6"
+                              height="20px"
+                              width="20px"
+                              href="./resources/icons/skills/codewars.svg"
+                            ></image>
+                          </pattern>
+                        </defs>
+                        <circle
+                          class="circle-body"
+                          cx="21"
+                          cy="21"
+                          r="16"
+                          fill="url(#codewars)"
+                        ></circle>
+                        <circle
+                          class="circle-ring"
+                          cx="21"
+                          cy="21"
+                          r="16"
+                          fill="transparent"
+                          stroke="transparent"
+                          stroke-width="3"
+                        ></circle>
+                        <circle
+                          class="circle-level"
+                          cx="21"
+                          cy="21"
+                          r="16"
+                          fill="transparent"
+                          stroke="#fff"
+                          stroke-width="3"
+                          stroke-dasharray="90 10"
+                          stroke-dashoffset="25"
+                        ></circle>
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="project cv-column-block cv-column__project">
+                <div
+                  class="title project__title title_line"
+                  data-language="projects_title"
+                >
+                  my PROJECTS
+                </div>
+                <div class="content project__content">
+                  <div class="imgs project__imgs">
+                    <div class="project__item">
+                      <img
+                        src="./resources/img/portfolio/photo_portfolio.jpg"
+                        alt="project"
+                        class="imgs__item"
+                      />
+                    </div>
+                    <div class="project__item">
+                      <img
+                        src="./resources/img/portfolio/shelter_landing.jpg"
+                        alt="project"
+                        class="imgs__item"
+                      />
+                    </div>
+                    <div class="project__item">
+                      <img
+                        src="./resources/img/portfolio/podcast_landing.jpg"
+                        alt="project"
+                        class="imgs__item"
+                      />
+                    </div>
+                    <div class="project__item">
+                      <img
+                        src="./resources/img/portfolio/No_js_slider.jpg"
+                        alt="project"
+                        class="imgs__item"
+                      />
+                    </div>
+                    <div class="project__item">
+                      <img
+                        src="./resources/img/portfolio/news_portal.jpg"
+                        alt="project"
+                        class="imgs__item"
+                      />
+                    </div>
+                    <div class="project__item">
+                      <img
+                        src="./resources/img/portfolio/audio_player.jpg"
+                        alt="project"
+                        class="imgs__item"
+                      />
+                    </div>
+                    <div class="project__item">
+                      <img
+                        src="./resources/img/portfolio/virtual_keyboard.jpg"
+                        alt="project"
+                        class="imgs__item"
+                      />
+                    </div>
+
+                    <div class="project__item">
+                      <img
+                        src="./resources/img/portfolio/shop.jpg"
+                        alt="project"
+                        class="imgs__item"
+                      />
+                    </div>
+                    <div class="project__item">
+                      <img
+                        src="./resources/img/portfolio/tic_tac_toe.jpg"
+                        alt="project"
+                        class="imgs__item"
+                      />
+                    </div>
+                    <div class="project__item">
+                      <img
+                        src="./resources/img/portfolio/async_race.jpg"
+                        alt="project"
+                        class="imgs__item"
+                      />
+                    </div>
+                    <div class="project__item">
+                      <img
+                        src="./resources/img/portfolio/memory_game.jpg"
+                        alt="project"
+                        class="imgs__item"
+                      />
+                    </div>
+                    <div class="project__item">
+                      <img
+                        src="./resources/img/portfolio/rs_lang.jpg"
+                        alt="project"
+                        class="imgs__item"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+          <footer class="footer cv__row cv-back__footer">
+            <div class="title" data-language="contacts_title">Find me in:</div>
+            <nav class="cv-navigation footer__navigation">
+              <ul class="cv-navigation-menu footer__navigation-menu">
+                <li
+                  class="cv-navigation-menu-item footer_navigation-menu__item"
+                >
+                  <a
+                    class="cv__link"
+                    href="https://www.linkedin.com/in/artsiom-mikula-495a73221/"
+                    target="_blank"
+                    ><svg class="link__icon">
+                      <use
+                        xlink:href="./resources/icons/contacts/linkedin.svg#linkedin"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li
+                  class="cv-navigation-menu-item footer_navigation-menu__item"
+                >
+                  <a
+                    class="cv__link"
+                    href="https://rabota.by/resume/8e066c9aff0b966e3d0039ed1f55596c554a6a"
+                    target="_blank"
+                    ><svg class="link__icon">
+                      <use
+                        xlink:href="./resources/icons/contacts/rabota.svg#rabota"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li
+                  class="cv-navigation-menu-item footer_navigation-menu__item"
+                >
+                  <a
+                    class="cv__link"
+                    href="https://github.com/ligalaz"
+                    target="_blank"
+                  >
+                    <svg class="link__icon">
+                      <use
+                        xlink:href="./resources/icons/contacts/github.svg#github"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li
+                  class="cv-navigation-menu-item footer_navigation-menu__item cv-navigation-menu-item_middle"
+                >
+                  <a class="cv__link" href="tel:+375292310731" target="_blank">
+                    <svg class="link__icon">
+                      <use
+                        xlink:href="./resources/icons/contacts/phone.svg#phone"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li
+                  class="cv-navigation-menu-item footer_navigation-menu__item"
+                >
+                  <a
+                    class="cv__link"
+                    href="mailto:95artm.mick@gmail.com"
+                    target="_blank"
+                  >
+                    <svg class="link__icon">
+                      <use
+                        xlink:href="./resources/icons/contacts/gmail.svg#gmail"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li
+                  class="cv-navigation-menu-item footer_navigation-menu__item"
+                >
+                  <a
+                    class="cv__link"
+                    href="https://discordapp.com/users/742091236944511088"
+                    target="_blank"
+                  >
+                    <svg class="link__icon">
+                      <use
+                        xlink:href="./resources/icons/contacts/discord.svg#discord"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <div class="modal cv__modal">
+      <div class="modal-close cv__modal-close">
+        <div class="close-line close-line_left modal-close__item"></div>
+        <div class="close-line close-line_right modal-close__item"></div>
+      </div>
+      <div class="modal-slider cv__modal-slider">
+        <div class="modal-slider-side modal-slider__left">
+          <div class="arrow-left modal-slider__arrow"></div>
+        </div>
+        <div class="center modal-slider__center">
+          <div class="modal-slider__item">
+            <img
+              src="./resources/img/portfolio/photo_portfolio.jpg"
+              alt="photo"
+              class="modal-slider__img"
+            />
+          </div>
+          <div class="modal-content">
+            <a
+              class="modal-link modal-content__link"
+              href="https://ligalaz-photographer-portfolio.netlify.app/"
+              target="_blank"
+              >Photographer Portfolio</a
+            >
+          </div>
+        </div>
+        <div class="modal-slider-side modal-slider__right">
+          <div class="arrow-right modal-slider__arrow"></div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
