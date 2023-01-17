@@ -6,6 +6,8 @@ class Reverser {
 
     this.controllers = document.querySelectorAll(`.controller__button`);
     this.links = document.querySelectorAll(`.cv__link_tablet`);
+
+    this.side = `side`;
     this.backOpen = `cv-back_open`;
     this.frontClose = `cv-front_close`;
     this.cardStatus = [`body_front`, `body_back`];
@@ -26,6 +28,10 @@ class Reverser {
     window.addEventListener(`load`, () => {
       window.location.hash = ``;
       window.scrollBy(0, -window.pageYOffset);
+
+      window.localStorage.getItem(this.side) === this.cardStatus[1]
+        ? this.cardReverse()
+        : null;
     });
   }
 
@@ -35,6 +41,7 @@ class Reverser {
   }
 
   addReverse = () => {
+    window.localStorage.setItem(this.side, this.cardStatus[1]);
     this.back.classList.add(this.backOpen);
     this.front.classList.add(this.frontClose);
     this.card.style.overflowY = `auto`;
@@ -42,6 +49,8 @@ class Reverser {
     this.setAnimation(2, true);
   };
   removeReverse = () => {
+    window.localStorage.setItem(this.side, this.cardStatus[0]);
+    window.location.hash = ``;
     this.back.classList.remove(this.backOpen);
     this.front.classList.remove(this.frontClose);
     this.setAnimation(2, true);

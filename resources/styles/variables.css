@@ -8,11 +8,13 @@
   --title_size: 1.2rem;
   --author-title_size: 1.4rem;
   --link_size: 1.1rem;
+  --link-tablet_size: 1rem;
   --burger-link_size: 1.4rem;
   --main_size: 0.8rem;
   --author-text_size: 1.1rem;
   --modal-text_size: 2rem;
   --info_size: 4rem;
+  --info-tablet_size: 2rem;
 }
 
 [data-theme="dark"] {
