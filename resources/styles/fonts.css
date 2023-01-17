@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  src: url("../fonts/Montserrat/static/Montserrat-Black.ttf");
+}
+
+@font-face {
+  font-family: "Playfair";
+  font-style: normal;
+  src: url("../fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Pacifico";
+  font-style: normal;
+  src: url("../fonts/Pacifico/Pacifico-Regular.ttf");
+}
